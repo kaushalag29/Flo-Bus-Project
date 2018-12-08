@@ -1,0 +1,44 @@
+{
+	"BusLists": [
+		{
+			"id":						"1",
+			"busOperator":				"Jai Maa Singhwahini(Khalari)",
+			"departureLocation":		"ITI Bus Stand",
+			"pickupPoint":				"Kathal More",
+			"busType": 					"2/2 Non AC",
+			"deptTime":					"6:05 AM",
+			"fareSeat":					"60",
+			"via":						"Brambe,Murhu"
+		},
+		{
+			"id":						"2",
+			"busOperator":				"Jai Maa Singhwahini(Latehar)",
+			"departureLocation":		"ITI Bus Stand",
+			"pickupPoint":				"Kathal More",
+			"busType": 					"2/2 Non AC",
+			"deptTime":					"7:04 AM",
+			"fareSeat":					"80",
+			"via":						"Brambe,Murhu"
+		},
+		{
+			"id":						"3",
+			"busOperator":				"Shree Ram Rath(Latehar)",
+			"departureLocation":		"ITI Bus Stand",
+			"pickupPoint":				"Kathal More",
+			"busType": 					"2/2 Non AC",
+			"deptTime":					"9:00 AM",
+			"fareSeat":					"130",
+			"via":						"Brambe,Murhu"
+		},
+		{
+			"id":						"4",
+			"busOperator":				"Royal Hapamuni(Lohardaga)",
+			"departureLocation":		"ITI Bus Stand",
+			"pickupPoint":				"Kathal More",
+			"busType": 					"3/2 Non AC",
+			"deptTime":					"11:00 AM",
+			"fareSeat":					"80",
+			"via":						"Brambe,Murhu"
+		}
+	]
+}
