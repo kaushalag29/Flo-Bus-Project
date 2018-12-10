@@ -18,7 +18,7 @@ You can get valid sender address using below terminal command:
  
  Inorder to get private address for corresponding Sender address use the below terminal cmd:
  
- flo-cli -testnet dumpprivkey <sender address>
+ flo-cli -testnet dumpprivkey "sender address"
 
 5. Send it and wait for transaction to be confirmed.Send all routes to the same address(that is receiving address will be same for all routes).
 
