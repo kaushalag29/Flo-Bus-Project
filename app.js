@@ -67,7 +67,13 @@ function getDataFromTransactions(txid){
 		var transaction = txid[i];
 		var transactionData = transaction["floData"];
 		if(transactionData.startsWith('BusLists:')){
-			transactionData = JSON.parse(transactionData.split('BusLists:')[1]);
+
+			try{
+				transactionData = JSON.parse(transactionData.split('BusLists:')[1]);
+			}catch(error){
+				console.log(error);
+				continue;
+			}
 			console.log(transactionData,typeof transactionData);
 			var uniqueId = convertStringToInt(transactionData["serviceNumber"]);
 			console.log(uniqueId);
