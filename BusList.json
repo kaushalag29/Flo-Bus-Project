@@ -1,44 +1,513 @@
 {
 	"BusLists": [
 		{
-			"id":						"1",
-			"busOperator":				"Jai Maa Singhwahini(Khalari)",
-			"departureLocation":		"ITI Bus Stand",
-			"pickupPoint":				"Kathal More",
-			"busType": 					"2/2 Non AC",
-			"deptTime":					"6:05 AM",
-			"fareSeat":					"60",
-			"via":						"Brambe,Murhu"
+			"version":					"1.0",
+			"serviceNumber":			"1",
+			"busOperator":				"Ashirvad",
+			"Source":					"Ranchi",
+			"Destination":				"Bhubaneswar",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"4:40 PM",
+			"fareSeat":					"550",
+			"via":						"Tata,Bariapda,Baleshwar,Bhadrak,Panikoili,Chandil,Cuttak"
 		},
 		{
-			"id":						"2",
-			"busOperator":				"Jai Maa Singhwahini(Latehar)",
-			"departureLocation":		"ITI Bus Stand",
-			"pickupPoint":				"Kathal More",
-			"busType": 					"2/2 Non AC",
-			"deptTime":					"7:04 AM",
-			"fareSeat":					"80",
-			"via":						"Brambe,Murhu"
+			
+			"version":					"1.0",
+			"serviceNumber":			"2",
+			"busOperator":				"Dildar",
+			"Source":					"Ranchi",
+			"Destination":				"Bhubaneswar",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"6:40 PM",
+			"fareSeat":					"550",
+			"via":						"Chaibasa,Champua,Keonjhar,Anandpur,Panikoili"
 		},
 		{
-			"id":						"3",
-			"busOperator":				"Shree Ram Rath(Latehar)",
-			"departureLocation":		"ITI Bus Stand",
-			"pickupPoint":				"Kathal More",
-			"busType": 					"2/2 Non AC",
-			"deptTime":					"9:00 AM",
-			"fareSeat":					"130",
-			"via":						"Brambe,Murhu"
+			
+			"version":					"1.0",
+			"serviceNumber":			"3",
+			"busOperator":				"Shirdi Sai",
+			"Source":					"Ranchi",
+			"Destination":				"Bhubaneswar",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"6:40 PM",
+			"fareSeat":					"550",
+			"via":						"Chaibasa,Champua,Keonjhar,Anandpur,Panikoili"
 		},
 		{
-			"id":						"4",
-			"busOperator":				"Royal Hapamuni(Lohardaga)",
-			"departureLocation":		"ITI Bus Stand",
-			"pickupPoint":				"Kathal More",
-			"busType": 					"3/2 Non AC",
-			"deptTime":					"11:00 AM",
-			"fareSeat":					"80",
-			"via":						"Brambe,Murhu"
-		}
+			
+			"version":					"1.0",
+			"serviceNumber":			"4",
+			"busOperator":				"Shivam",
+			"Source":					"Ranchi",
+			"Destination":				"Siliguri",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"4:00 PM",
+			"fareSeat":					"800",
+			"via":						"Ramgarh,Hazaribagh,Deoghar,Bhagalpur,Purnia,Kisanganj"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"5",
+			"busOperator":				"Shivam",
+			"Source":					"Ranchi",
+			"Destination":				"Siliguri",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/1 AC",
+			"deptTime":					"5:00 PM",
+			"fareSeat":					"800",
+			"via":						"Ramgarh,Hazaribagh,Deoghar,Bhagalpur,Purnia,Kisanganj"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"6",
+			"busOperator":				"Jagdamba",
+			"Source":					"Ranchi",
+			"Destination":				"Siliguri",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/1 AC",
+			"deptTime":					"5:45 PM",
+			"fareSeat":					"800",
+			"via":						"Ramgarh,Hazaribagh,Deoghar,Bhagalpur,Purnia,Kisanganj"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"7",
+			"busOperator":				"Ashirvad",
+			"Source":					"Ranchi",
+			"Destination":				"Siliguri",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/1 AC",
+			"deptTime":					"3:40 PM",
+			"fareSeat":					"800",
+			"via":						"Ramgarh,Hazaribagh,Deoghar,Bhagalpur,Purnia,Kisanganj"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"8",
+			"busOperator":				"Shivam",
+			"Source":					"Ranchi",
+			"Destination":				"Purnia",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"4:00 PM",
+			"fareSeat":					"600",
+			"via":						"Ramgarh,Hazaribagh,Deoghar,Bhagalpur,Purnia"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"9",
+			"busOperator":				"Shivam",
+			"Source":					"Ranchi",
+			"Destination":				"Purnia",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/1 AC",
+			"deptTime":					"5:00 PM",
+			"fareSeat":					"600",
+			"via":						"Ramgarh,Hazaribagh,Deoghar,Bhagalpur,Purnia"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"10",
+			"busOperator":				"Jagdamba",
+			"Source":					"Ranchi",
+			"Destination":				"Purnia",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/1 AC",
+			"deptTime":					"5:45 PM",
+			"fareSeat":					"600",
+			"via":						"Ramgarh,Hazaribagh,Deoghar,Bhagalpur,Purnia"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"11",
+			"busOperator":				"Ashirvad",
+			"Source":					"Ranchi",
+			"Destination":				"Purnia",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/1 AC",
+			"deptTime":					"3:40 PM",
+			"fareSeat":					"600",
+			"via":						"Ramgarh,Hazaribagh,Deoghar,Bhagalpur,Purnia"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"12",
+			"busOperator":				"Kohinoor",
+			"Source":					"Ranchi",
+			"Destination":				"Bhagalpur",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"7:30 PM",
+			"fareSeat":					"500",
+			"via":						"Dhanbad,Bokaro,Dumka"
+		},
+		
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"13",
+			"busOperator":				"JankiRath",
+			"Source":					"Ranchi",
+			"Destination":				"Muzzafarpur",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"6:00 PM",
+			"fareSeat":					"500",
+			"via":						"Hazipur,Mahua,Sonbarsa,Kachhipakki,Bhagwanpur"
+		},
+
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"14",
+			"busOperator":				"Shyamoli Volvo",
+			"Source":					"Ranchi",
+			"Destination":				"Kolkata",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"7:30 PM",
+			"fareSeat":					"900",
+			"via":						"Bokaro,Dhanbad,Aasansol,Durgapur,Burdwan"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"15",
+			"busOperator":				"Royal Cruiser",
+			"Source":					"Ranchi",
+			"Destination":				"Kolkata",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"5:00 PM",
+			"fareSeat":					"850",
+			"via":						"Bokaro,Dhanbad,Aasansol,Durgapur,Burdwan"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"16",
+			"busOperator":				"Rugby Super",
+			"Source":					"Ranchi",
+			"Destination":				"Katihar",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 NON AC",
+			"deptTime":					"4:15 PM",
+			"fareSeat":					"500",
+			"via":						"Hazaribagh,Bagodar,Jamua, Chakai, Deoghar, Banka, Amarpur, Bhagalpur, Purnia"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"17",
+			"busOperator":				"Rugby Super",
+			"Source":					"Ranchi",
+			"Destination":				"Sahebganj",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"9:00 PM",
+			"fareSeat":					"550",
+			"via":						"Dhanbad,Jamtada,Dumka,Kathikund, Amrapara, Barhet"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"18",
+			"busOperator":				"Rugby Super",
+			"Source":					"Ranchi",
+			"Destination":				"Darbhanga",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 NON AC",
+			"deptTime":					"6:30 PM",
+			"fareSeat":					"500",
+			"via":						"Ramgarh,Hazaribagh,Koderma,hajipur,Jandaha,Chakla,Musrigharari,Samastipur"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"19",
+			"busOperator":				"Rugby Super",
+			"Source":					"Ranchi",
+			"Destination":				"Sahebganj",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 NON AC",
+			"deptTime":					"7:30 PM",
+			"fareSeat":					"450",
+			"via":						"Dhanbad,Jamtada,Dumka,Kathikund, Amrapara, Barhet"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"20",
+			"busOperator":				"Dipmala",
+			"Source":					"Ranchi"	,
+			"Destination":				"Patna",
+			"departureLocation":		"Harmu",
+			"busType": 					"1/2 AC",
+			"deptTime":					"9:00 PM",
+			"fareSeat":					"450",
+			"via":						"Ramgarh,Hazaribagh,Nawada,Biharsarif"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"21",
+			"busOperator":				"Puja Rath",
+			"Source":					"Ranchi"	,
+			"Destination":				"Patna",
+			"departureLocation":		"Harmu",
+			"busType": 					"1/2 AC",
+			"deptTime":					"9:00 PM",
+			"fareSeat":					"450",
+			"via":						"Ramgarh,Hazaribagh,Nawada,Biharsarif"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"22",
+			"busOperator":				"Sadhiv Rath",
+			"Source":					"Ranchi"	,
+			"Destination":				"Patna",
+			"departureLocation":		"Harmu",
+			"busType": 					"1/2 AC",
+			"deptTime":					"9:20 PM",
+			"fareSeat":					"450",
+			"via":						"Ramgarh,Hazaribagh,Nawada,Biharsarif"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"23",
+			"busOperator":				"Shatabdi",
+			"Source":					"Ranchi"	,
+			"Destination":				"Patna",
+			"departureLocation":		"Harmu",
+			"busType": 					"1/2 AC",
+			"deptTime":					"9:25 PM",
+			"fareSeat":					"450",
+			"via":						"Ramgarh,Hazaribagh,Nawada,Biharsarif"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"24",
+			"busOperator":				"Bharat Paryatan",
+			"Source":					"Ranchi"	,
+			"Destination":				"Patna",
+			"departureLocation":		"Harmu",
+			"busType": 					"2/2 AC",
+			"deptTime":					"9:25 PM",
+			"fareSeat":					"500",
+			"via":						"Ramgarh,Hazaribagh,Nawada,Biharsarif"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"25",
+			"busOperator":				"Prithvi Vahan",
+			"Source":					"Ranchi"	,
+			"Destination":				"Patna",
+			"departureLocation":		"Harmu",
+			"busType": 					"1/2 AC SL",
+			"deptTime":					"9:40 PM",
+			"fareSeat":					"750",
+			"via":						"Ramgarh,Hazaribagh,Nawada,Biharsarif"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"26",
+			"busOperator":				"Tiwari Motors",
+			"Source":					"Ranchi"	,
+			"Destination":				"Aara",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"1/2 NON AC",
+			"deptTime":					"6:30 PM",
+			"fareSeat":					"320",
+			"via":						"Danapaur,Maner,Bihta,Koilwar"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"27",
+			"busOperator":				"Tiwari Motors",
+			"Source":					"Ranchi"	,
+			"Destination":				"Aara",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 NON AC",
+			"deptTime":					"7:00 PM",
+			"fareSeat":					"320",
+			"via":						"Aurangabad,Daudnagar,Mehandiya,Arwal"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"28",
+			"busOperator":				"Mahuli Travels",
+			"Source":					"Ranchi"	,
+			"Destination":				"Patna",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"1/2 NON AC",
+			"deptTime":					"9:30 PM",
+			"fareSeat":					"300",
+			"via":						"Hazaribagh,Nawada,Biharsarif"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"29",
+			"busOperator":				"Shubham Travels",
+			"Source":					"Ranchi"	,
+			"Destination":				"Varanasi",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 NON AC",
+			"deptTime":					"8:00 PM",
+			"fareSeat":					"400",
+			"via":						"Aurangabad,Dehri on Son,Sasaram,Mohania,Chandauli"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"30",
+			"busOperator":				"Anamika Bhadauni",
+			"Source":					"Ranchi"	,
+			"Destination":				"BiharSarif",
+			"departureLocation":		"Harmu",
+			"busType": 					"1/2 NON AC",
+			"deptTime":					"9:30 PM",
+			"fareSeat":					"250",
+			"via":						"Ramgarh,Hazaribagh,Nawada"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"31",
+			"busOperator":				"Panchwati",
+			"Source":					"Ranchi"	,
+			"Destination":				"BiharSarif",
+			"departureLocation":		"Harmu",
+			"busType": 					"2/2 NON AC",
+			"deptTime":					"9:30 PM",
+			"fareSeat":					"300",
+			"via":						"Ramgarh,Hazaribagh,Nawada"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"32",
+			"busOperator":				"Anamika",
+			"Source":					"Ranchi"	,
+			"Destination":				"BiharSarif",
+			"departureLocation":		"Harmu",
+			"busType": 					"2/2 AC",
+			"deptTime":					"9:30 PM",
+			"fareSeat":					"300",
+			"via":						"Ramgarh,Hazaribagh,Nawada"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"33",
+			"busOperator":				"Anamika Bhadauni",
+			"Source":					"Ranchi"	,
+			"Destination":				"Bakhtiyarpur",
+			"departureLocation":		"Harmu",
+			"busType": 					"1/2 NON AC",
+			"deptTime":					"9:30 PM",
+			"fareSeat":					"300",
+			"via":						"Ramgarh,Hazaribagh,Nawada,Biharsarif"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"34",
+			"busOperator":				"Pawanrath",
+			"Source":					"Ranchi"	,
+			"Destination":				"Chaibasa",
+			"departureLocation":		"Government Bus Stand",
+			"busType": 					"2/2 NON AC",
+			"deptTime":					"06:00 AM,07:00 AM,08:00 AM,11:00 AM, 02:00 PM, 03:00 PM",
+			"fareSeat":					"350",
+			"via":						"Non Stop"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"35",
+			"busOperator":				"Pawanrath",
+			"Source":					"Ranchi"	,
+			"Destination":				"Daltonganj/Gharwa",
+			"departureLocation":		"Government Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"05:30AM(G), 06:30 AM, 07:30 AM, 11:00 AM(G),12:40 PM(G), 02:45 PM(G), 03:30 PM(G)",
+			"fareSeat":					"DALTONGANJ-250, GHARWA-320",
+			"via":						"Non Stop"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"36",
+			"busOperator":				"Pawanrath",
+			"Source":					"Ranchi"	,
+			"Destination":				"Koderma",
+			"departureLocation":		"Government Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"02:25 PM, 04:05 PM",
+			"fareSeat":					"200",
+			"via":						"Non Stop"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"37",
+			"busOperator":				"Pawanrath",
+			"Source":					"Ranchi"	,
+			"Destination":				"Giridih",
+			"departureLocation":		"Government Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"05:10AM,06:05AM, 07:05AM, 08:05AM, 09:05AM, 10:05AM, 11:15AM, 12:05PM, 01:05PM, 01:50PM, 03:05PM 03:45PM, 05:05PM ",
+			"fareSeat":					"350",
+			"via":						"Non Stop"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"38",
+			"busOperator":				"Pawanrath",
+			"Source":					"Ranchi"	,
+			"Destination":				"Bokaro-Dhanbad",
+			"departureLocation":		"Government Bus Stand",
+			"busType": 					"2/2 AC",
+			"deptTime":					"06:10AM, 06:30AM, 07:00AM, 07:30AM, 08:00AM, 08:30AM, 09:00AM, 09:30AM, 10:00AM, 10:30AM, 11:00AM, 11:30AM, 12:00PM, 12:30PM, 01:00PM, 01:30PM, 02:00PM, 02:30PM, 03:00PM, 03:30PM, 04:00PM, 04:30PM, 05:00PM,05:30PM, 06:00PM,06:30PM",
+			"fareSeat":					"Bokaro-200, Dhanbad- 250",
+			"via":						"Non Stop"
+		},
+		{
+			
+			"version":					"1.0",
+			"serviceNumber":			"39",
+			"busOperator":				"Pammi Travels",
+			"Source":					"Ranchi",
+			"Destination":				"Kolkata",
+			"departureLocation":		"Khadgara Bus Stand",
+			"busType": 					"2/2 NON AC",
+			"deptTime":					"7:30 PM",
+			"fareSeat":					"300",
+			"via":						"Bokaro,Dhanbad,Aasansol,Durgapur,Burdwan"
+		}	
+	
 	]
 }
