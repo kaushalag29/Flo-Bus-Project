@@ -10,7 +10,7 @@
 
 Sample flodata will be:
 
-BusLists:{"version":"1.0","serviceNumber":"1","busOperator":"Ashirvad","Source":"Ranchi","Destination":"Bhubaneswar","departureLocation":"KhadgaraBusStand","busType":"2/2AC","deptTime":"4:40PM","fareSeat":"550","via":"Tata,Bariapda,Baleshwar,Bhadrak,Panikoili,Chandil,Cuttak"}
+BusLists:{"info":"1$2$3$4$5$6$7$8$9$10"}
 
 You can get valid sender address using below terminal command:
 
