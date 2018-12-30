@@ -3527,6 +3527,7 @@
 		trx.addflodata(sendFloData);
 		console.log(sendFloData);
 		var wif = prompt("Enter Private Key");
+        //var wif = "cRocf6QdQJVBiVmJ54ZjNoGiKQvB4bS37ZrLBVEKM7tJxUPg8cr9";
 		var signedTxHash = trx.sign(wif, 1);
 		console.log(signedTxHash);
 		broadcastTx(signedTxHash);

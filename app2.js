@@ -119,6 +119,7 @@ function displayBusList(){
     	}
     	rowNum++;
 	}
+	document.getElementById('Loading').remove();
 }
 
 getTransactions(displayAddress);
