@@ -1,7 +1,7 @@
 //Global Variables
 var displayAddress = "oKv51tWdZWJyMJfVCtQoTo2FxrPicPtWbe";	//reading floData from transactions made to this address
 var id_contents_map = new Map();	//to store contents of bus route with repsect to its service type number
-var jsonParam = ['Version','Service Number','Bus Operator','Source','Destination','Dept Location','Bus Type','Dept Time','Fare Seat','Via'];
+var jsonParam = ['SNo.','Bus Operator','Source','Destination','Dept Location','Bus Type','Dept Time','Fare Seat','Via'];
 
 function convertStringToInt(string){
 	return parseInt(string,10);
@@ -103,7 +103,7 @@ function getDataFromTransactions(txid){
 function displayBusList(){
 	var tableElement = document.getElementById("busTable");
 	var row = tableElement.insertRow(0);
-	for(var i=0;i<10;i++){
+	for(var i=0;i<9;i++){
 		var cell = row.insertCell(i);
 		cell.innerHTML = "<center><h3>"+jsonParam[i]+"</h3></center>";
 	}
@@ -113,8 +113,8 @@ function displayBusList(){
 			break;
 		//var tableElement = document.getElementById("busTable");
     	var row = tableElement.insertRow(rowNum);
-    	for(var j=2;j<10;j++){
-    		var cell = row.insertCell(j-2);
+    	for(var j=1;j<10;j++){
+    		var cell = row.insertCell(j-1);
     		cell.innerHTML = "<td><center>"+id_contents_map.get(i)[j]+"</center></td>";
     	}
     	rowNum++;
