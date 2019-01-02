@@ -3422,7 +3422,7 @@
         const mainnet = `https://livenet.flocha.in`;
         const testnet = `https://testnet.flocha.in`;
 
-        let server = testnet;
+        let server = mainnet;
 		
 		const sendAmt = 0.002;
 		const fee = 0.0005;
@@ -3527,7 +3527,6 @@
 		trx.addflodata(sendFloData);
 		console.log(sendFloData);
 		var wif = prompt("Enter Private Key");
-        //var wif = "cRocf6QdQJVBiVmJ54ZjNoGiKQvB4bS37ZrLBVEKM7tJxUPg8cr9";
 		var signedTxHash = trx.sign(wif, 1);
 		console.log(signedTxHash);
 		broadcastTx(signedTxHash);
