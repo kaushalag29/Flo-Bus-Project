@@ -46,7 +46,7 @@ function getTransactions(address){
             let res = ajax(uri, null, 'GET', function (response) {
                 try {
                       let data = JSON.parse(response);
-                      console.log(data["txs"]);
+                      //console.log(data["txs"]);
                       getDataFromTransactions(data["txs"]);
                 } catch (error) {
                         console.log(error);
@@ -61,13 +61,18 @@ function getDataFromTransactions(txid){
 	//Getting Flodata from transactions
 	console.log(txid);
 	var len = txid.length;
+	var senderAddr='';
 	//console.log(len);
 	//console.log(txid[0]["floData"]);
 	for(var i=0;i<len;i++){
 		var transaction = txid[i];
-		console.log(transaction,"tx");
+		console.log("Sender's Address = "+transaction["vin"]["0"]["addr"]);
+		senderAddr = transaction["vin"]["0"]["addr"] + '';
+		if(senderAddr !== displayAddress)
+			continue;
+		//console.log(transaction,"tx");
 		var transactionData = transaction["floData"];
-		console.log(transactionData);
+		//console.log(transactionData);
 		if(transactionData.startsWith('BusLists:')){
 
 			try{
@@ -76,13 +81,13 @@ function getDataFromTransactions(txid){
 				console.log(error);
 				continue;
 			}
-			console.log(transactionData,typeof transactionData);
+			//console.log(transactionData,typeof transactionData);
 			if(transactionData["info"] === undefined)
 				continue;
 			transactionData = transactionData["info"].split('$');
-			console.log(transactionData);
+			//console.log(transactionData);
 			var uniqueId = convertStringToInt(transactionData[1]);
-			console.log(uniqueId);
+			//console.log(uniqueId);
 			if(id_contents_map.get(uniqueId) === undefined){
 				id_contents_map.set(uniqueId,transactionData);
 			}
@@ -95,7 +100,7 @@ function getDataFromTransactions(txid){
 		}
 	}
 
-	console.log(id_contents_map);
+	//console.log(id_contents_map);
 	displayBusList();
 
 }
