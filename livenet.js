@@ -19,7 +19,7 @@ function compareVersion(newVer,oldVer){
 
 let ajax = function (uri, params, req_type, callback) {
             let url = `https://livenet.flocha.in/${uri}`;
-			console.log(url);
+			//console.log(url);
 			
 			let response = {};
 			var http = new XMLHttpRequest();
@@ -39,7 +39,7 @@ let ajax = function (uri, params, req_type, callback) {
             http.send(params);
         }
 
-function getTransactions(address){
+function getTotalPages(address){
 	//Getting an array of transactions
 	var uri = "api/txs/?address="+address;
 	try {
@@ -47,7 +47,7 @@ function getTransactions(address){
                 try {
                       let data = JSON.parse(response);
                       //console.log(data["txs"]);
-                      getDataFromTransactions(data["txs"]);
+                      getTransactionsByPage(address,convertStringToInt(data["pagesTotal"]+''));
                 } catch (error) {
                         console.log(error);
                     }
@@ -57,18 +57,45 @@ function getTransactions(address){
         }
 }
 
+function getTransactionsByPage(address,totalPages){
+	var cnt = 0;
+	for(var i=0;i<totalPages;i++){
+	//Getting an array of transactions
+	//console.log(i);
+		var uri = "api/txs/?address="+address+"&pageNum="+i.toString();
+		try {
+	            let res = ajax(uri, null, 'GET', function (response) {
+	                try {
+	                      let data = JSON.parse(response);
+	                      //console.log(data["txs"]);
+	                      //console.log(typeof data["txs"]);
+	                      getDataFromTransactions(data["txs"]);
+	                      cnt++;
+	                      if(cnt === totalPages)
+	                      	displayBusList();
+	                      //console.log(i,totalPages-1);
+	                } catch (error) {
+	                        console.log(error);
+	                    }
+	                });
+	    } catch (error) {
+	                console.error(error);
+	        }
+	}
+}
+
 function getDataFromTransactions(txid){
 	//Getting Flodata from transactions
-	console.log(txid);
+	//console.log(txid);
 	var len = txid.length;
 	var senderAddr='';
 	//console.log(len);
 	//console.log(txid[0]["floData"]);
 	for(var i=0;i<len;i++){
 		var transaction = txid[i];
-		console.log("Sender's Address = "+transaction["vin"]["0"]["addr"]);
+		//console.log("Sender's Address = "+transaction["vin"]["0"]["addr"]);
 		senderAddr = transaction["vin"]["0"]["addr"] + '';
-		if(senderAddr !== displayAddress)
+		if(senderAddr !== 'oeVHhMY2gZYuwvrkSUgEwFKUj3MbL6WSKA')
 			continue;
 		//console.log(transaction,"tx");
 		var transactionData = transaction["floData"];
@@ -101,7 +128,7 @@ function getDataFromTransactions(txid){
 	}
 
 	//console.log(id_contents_map);
-	displayBusList();
+	//displayBusList();
 
 }
 
@@ -127,4 +154,4 @@ function displayBusList(){
 	document.getElementById('Loading').remove();
 }
 
-getTransactions(displayAddress);
+getTotalPages(displayAddress);

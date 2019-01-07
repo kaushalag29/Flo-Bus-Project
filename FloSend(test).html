@@ -3526,6 +3526,7 @@
 		var sendFloData = document.getElementById("flotextdata").value;
 		trx.addflodata(sendFloData);
 		console.log(sendFloData);
+		
 		var wif = prompt("Enter Private Key");
 		var signedTxHash = trx.sign(wif, 1);
 		console.log(signedTxHash);
