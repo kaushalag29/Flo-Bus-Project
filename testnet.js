@@ -137,7 +137,7 @@ function displayBusList(){
 	var row = tableElement.insertRow(0);
 	for(var i=0;i<9;i++){
 		var cell = row.insertCell(i);
-		cell.innerHTML = "<center><h3>"+jsonParam[i]+"</h3></center>";
+		cell.innerHTML = "<th><center><font size='6' color='#ff0066' face='Comic Sans MS'>"+jsonParam[i]+"</font></center></th>";
 	}
 	var rowNum = 1;
 	for(var i=1;i>=1;i++){
@@ -147,7 +147,7 @@ function displayBusList(){
     	var row = tableElement.insertRow(rowNum);
     	for(var j=1;j<10;j++){
     		var cell = row.insertCell(j-1);
-    		cell.innerHTML = "<td><center>"+id_contents_map.get(i)[j]+"</center></td>";
+    		cell.innerHTML = '<td><center><font size="5" color="brown" face="sans-serif">'+id_contents_map.get(i)[j]+"</font></center></td>";
     	}
     	rowNum++;
 	}
